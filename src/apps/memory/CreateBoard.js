@@ -14,6 +14,7 @@ export const createBoard = (card) => {
       done: false,
       key: `card_${i}`,
       styles: "item",
+      score: false,
     };
     let item2 = { ...item1 };
     listBoard = [...listBoard, item1, item2];
