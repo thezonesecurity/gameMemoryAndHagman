@@ -8,12 +8,13 @@ export const KeyBoardComponent = ({ handlerKeyPress }) => {
   const handlerKey = (key) => {
     //devuelve la letra que se a presionado
     const newKeyBoard = KeyBoard.map((item) => {
-      const { key: keyList } = item;
+      const { key: keyList, status } = item;
       if (key === keyList) {
         item.status = true;
       }
       return item;
     });
+
     console.log(newKeyBoard);
     setKeyBoard(newKeyBoard);
     handlerKeyPress(key); //2

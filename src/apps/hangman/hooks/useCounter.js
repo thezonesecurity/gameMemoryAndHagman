@@ -9,6 +9,7 @@ export const useCounter = (initCounter, { max, min }) => {
   };
   const decrementCounter = (step = 1) => {
     if (counter > min) {
+      //console.log(counter);
       setCounter(counter - step);
     }
   };
